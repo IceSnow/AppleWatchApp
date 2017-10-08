@@ -82,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		736BE5871F8A28FD00C2229F /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 		73DF45031F8A030F00F275DD /* AppleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DF45061F8A030F00F275DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DF45081F8A030F00F275DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		736BE5861F8A28FD00C2229F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				736BE5871F8A28FD00C2229F /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		73DF44FA1F8A030F00F275DD = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +159,7 @@
 				73DF452F1F8A031000F275DD /* AppleWatchApp WatchKit App */,
 				73DF453E1F8A031000F275DD /* AppleWatchApp WatchKit Extension */,
 				73DF45041F8A030F00F275DD /* Products */,
+				736BE5861F8A28FD00C2229F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -690,6 +700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GR2VYA358W;
 				INFOPLIST_FILE = AppleWatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ackirin.AppleWatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -705,6 +716,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GR2VYA358W;
 				INFOPLIST_FILE = AppleWatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ackirin.AppleWatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

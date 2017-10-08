@@ -1,16 +1,134 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="center" layout="overlap" id="aFC-9l-6KG">
+                            <items>
+                                <button width="1" height="1" alignment="left" id="4O0-pS-zJI">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="fristComeAction" destination="AgC-eL-Hgc" id="S3H-mK-ojX"/>
+                                    </connections>
+                                </button>
+                                <group width="50" height="50" alignment="center" verticalAlignment="center" layout="overlap" id="40X-VK-7QC" userLabel="content">
+                                    <items>
+                                        <group width="1" height="1" alignment="left" radius="25" id="sCG-b0-LrB" userLabel="bg">
+                                            <color key="backgroundColor" red="0.1041641906" green="0.17111080880000001" blue="0.25492122769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </group>
+                                        <group width="14" height="14" alignment="right" layout="overlap" radius="7" id="tVw-WQ-exP" userLabel="cor">
+                                            <items>
+                                                <group width="12" height="12" alignment="center" verticalAlignment="center" radius="6" id="QH1-hb-jNZ">
+                                                    <color key="backgroundColor" red="0.21905410289999999" green="0.66852664949999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </group>
+                                                <label alignment="center" verticalAlignment="center" text="2" id="mSf-4v-7D6">
+                                                    <color key="textColor" red="0.1041641906" green="0.17111080880000001" blue="0.25492122769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </group>
+                                        <group alignment="center" verticalAlignment="center" layout="vertical" spacing="0.0" id="ZJt-4Y-sm4">
+                                            <items>
+                                                <label alignment="center" text="18" id="XmP-rU-hTp" userLabel="num">
+                                                    <color key="textColor" red="0.41007965803146362" green="0.70582717657089233" blue="0.94515782594680786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="font" type="system" pointSize="21"/>
+                                                </label>
+                                                <label alignment="center" text="初次到店" id="05u-CT-aKq" userLabel="title">
+                                                    <color key="textColor" red="0.35173904895782471" green="0.56184208393096924" blue="0.73729962110519409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" layout="overlap" id="YgR-Qy-TQy">
+                            <items>
+                                <button width="1" height="1" alignment="left" id="V3s-Cx-vwb">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="againComeAction" destination="AgC-eL-Hgc" id="C9o-9S-hVI"/>
+                                    </connections>
+                                </button>
+                                <group width="50" height="50" alignment="center" verticalAlignment="center" layout="overlap" id="lek-fE-YVl">
+                                    <items>
+                                        <group width="1" height="1" alignment="left" radius="25" id="zzJ-0j-LRh" userLabel="bg">
+                                            <color key="backgroundColor" red="0.3975939751" green="0.24089366200000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </group>
+                                        <group alignment="center" verticalAlignment="center" layout="vertical" spacing="0.0" id="ZeF-Xp-GHd">
+                                            <items>
+                                                <label alignment="center" text="9" id="8Mk-ai-vXY" userLabel="num">
+                                                    <color key="textColor" red="0.99057477712631226" green="0.63528639078140259" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="font" type="system" pointSize="21"/>
+                                                </label>
+                                                <label alignment="center" text="再次到店" id="1yo-yd-pen" userLabel="title">
+                                                    <color key="textColor" red="0.76467376947402954" green="0.52046036720275879" blue="0.19584828615188599" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="96" y="72"/>
+        </scene>
+        <!--初次到店 18-->
+        <scene sceneID="xb7-hz-f5v">
+            <objects>
+                <controller identifier="FristComeIC" title="初次到店 18" id="Rzi-P7-HiQ">
+                    <items>
+                        <table alignment="left" id="zJP-29-lbQ">
+                            <items>
+                                <tableRow identifier="frist_come" id="KAE-sI-1z9">
+                                    <group key="rootItem" width="1" alignment="left" id="geC-Nb-lUh"/>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.21905410289999999" green="0.66852664949999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </table>
+                    </items>
+                    <connections>
+                        <segue destination="yYc-8n-PyD" kind="relationship" relationship="nextPage" id="Ota-64-U8m"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="442" y="91"/>
+        </scene>
+        <!--再次到店 9-->
+        <scene sceneID="KaQ-KA-bVm">
+            <objects>
+                <controller identifier="AgainComeIC" title="再次到店 9" id="yYc-8n-PyD">
+                    <items>
+                        <table alignment="left" id="BmR-bg-8Ii">
+                            <items>
+                                <tableRow identifier="again_come" id="4FJ-xt-NQ2">
+                                    <group key="rootItem" width="1" alignment="left" id="b57-vd-rLy"/>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.99057477709999997" green="0.63528639080000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="808" y="72"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +149,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AppleWatchApp_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

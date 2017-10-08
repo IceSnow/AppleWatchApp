@@ -27,5 +27,17 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
+    // Action - 初次到店
+    @IBAction func fristComeAction() {
+        presentController(withNames: ["FristComeIC"], contexts: nil)
+    }
+    
+    // Action - 再次到店
+    @IBAction func againComeAction() {
+        
+    }
+    
+    
+    
 }
