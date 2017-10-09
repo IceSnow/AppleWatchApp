@@ -94,20 +94,35 @@
         <!--初次到店 18-->
         <scene sceneID="xb7-hz-f5v">
             <objects>
-                <controller identifier="FristComeIC" title="初次到店 18" id="Rzi-P7-HiQ">
+                <controller identifier="FristComeIC" title="初次到店 18" id="Rzi-P7-HiQ" customClass="FirstTimeToShopInterfaceController" customModule="AppleWatchApp_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="zJP-29-lbQ">
                             <items>
-                                <tableRow identifier="frist_come" id="KAE-sI-1z9">
-                                    <group key="rootItem" width="1" alignment="left" id="geC-Nb-lUh"/>
+                                <tableRow identifier="frist_come" id="KAE-sI-1z9" customClass="FristTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="geC-Nb-lUh">
+                                        <items>
+                                            <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="vjb-1r-gFu" userLabel="sep">
+                                                <color key="backgroundColor" red="0.19437804818153381" green="0.59618771076202393" blue="0.79984402656555176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </group>
+                                            <group width="5" height="1" alignment="left" id="h7x-je-2yN"/>
+                                            <imageView width="40" height="21" alignment="left" verticalAlignment="center" id="Rc4-cR-OIB"/>
+                                            <group alignment="right" verticalAlignment="center" layout="vertical" id="8Y2-8o-RHJ">
+                                                <items>
+                                                    <label alignment="right" text="16:31:49" id="UmR-Fv-Mno" userLabel="time">
+                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                    </label>
+                                                    <label alignment="right" text="1人" id="dIU-2e-GuC" userLabel="personNum">
+                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.19998151063919067" green="0.20001032948493958" blue="0.19997167587280273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
                                 </tableRow>
                             </items>
-                            <color key="backgroundColor" red="0.21905410289999999" green="0.66852664949999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </table>
                     </items>
-                    <connections>
-                        <segue destination="yYc-8n-PyD" kind="relationship" relationship="nextPage" id="Ota-64-U8m"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="442" y="91"/>
@@ -115,20 +130,57 @@
         <!--再次到店 9-->
         <scene sceneID="KaQ-KA-bVm">
             <objects>
-                <controller identifier="AgainComeIC" title="再次到店 9" id="yYc-8n-PyD">
+                <controller identifier="AgainComeIC" title="再次到店 9" id="yYc-8n-PyD" customClass="AgainTimeToShopInterfaceController" customModule="AppleWatchApp_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="BmR-bg-8Ii">
                             <items>
-                                <tableRow identifier="again_come" id="4FJ-xt-NQ2">
-                                    <group key="rootItem" width="1" alignment="left" id="b57-vd-rLy"/>
+                                <tableRow identifier="again_come" id="4FJ-xt-NQ2" customClass="AgainTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="b57-vd-rLy">
+                                        <items>
+                                            <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="OQn-hP-Xw8" userLabel="sep">
+                                                <color key="backgroundColor" red="0.97145634889602661" green="0.60050642490386963" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </group>
+                                            <group width="5" height="1" alignment="left" id="ccY-8X-xGm"/>
+                                            <group width="0.94999999999999996" alignment="left" layout="vertical" id="wsC-mx-RCW">
+                                                <items>
+                                                    <group width="1" alignment="left" id="Vbe-oe-kRh">
+                                                        <items>
+                                                            <imageView width="40" height="21" alignment="left" verticalAlignment="center" id="Ubd-6w-QLH"/>
+                                                            <group alignment="right" verticalAlignment="center" layout="vertical" id="cnr-Ho-ehN">
+                                                                <items>
+                                                                    <label alignment="right" text="16:31:49" id="CAu-lZ-ogy" userLabel="time">
+                                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                                    </label>
+                                                                    <label alignment="right" text="1人" id="Cpn-3L-dd7" userLabel="personNum">
+                                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                                    </label>
+                                                                </items>
+                                                            </group>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="Ob9-TE-n01">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="center" text="第七代凯美瑞" id="nU7-vX-7ou" userLabel="carName">
+                                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                                            </label>
+                                                            <label alignment="right" verticalAlignment="center" text="李女士" id="y71-Be-DZK" userLabel="cusName">
+                                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.19998151063919067" green="0.20001032948493958" blue="0.19997167587280273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
                                 </tableRow>
                             </items>
-                            <color key="backgroundColor" red="0.99057477709999997" green="0.63528639080000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </table>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="808" y="72"/>
+            <point key="canvasLocation" x="748" y="91"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

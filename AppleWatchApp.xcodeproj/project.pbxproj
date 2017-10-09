@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AC2496B1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2496A1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift */; };
+		5AC2496D1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2496C1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift */; };
+		5AC249711F8B27BA0029BB04 /* FristTimeToShopObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC249701F8B27BA0029BB04 /* FristTimeToShopObject.swift */; };
+		5AC249731F8B27FE0029BB04 /* AgainTimeToShopObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC249721F8B27FE0029BB04 /* AgainTimeToShopObject.swift */; };
 		73DF45071F8A030F00F275DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DF45061F8A030F00F275DD /* AppDelegate.swift */; };
 		73DF45091F8A030F00F275DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DF45081F8A030F00F275DD /* ViewController.swift */; };
 		73DF450C1F8A030F00F275DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DF450A1F8A030F00F275DD /* Main.storyboard */; };
@@ -82,6 +86,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5AC2496A1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTimeToShopInterfaceController.swift; sourceTree = "<group>"; };
+		5AC2496C1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgainTimeToShopInterfaceController.swift; sourceTree = "<group>"; };
+		5AC249701F8B27BA0029BB04 /* FristTimeToShopObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FristTimeToShopObject.swift; sourceTree = "<group>"; };
+		5AC249721F8B27FE0029BB04 /* AgainTimeToShopObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgainTimeToShopObject.swift; sourceTree = "<group>"; };
 		736BE5871F8A28FD00C2229F /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 		73DF45031F8A030F00F275DD /* AppleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DF45061F8A030F00F275DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +150,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AC2496E1F8B27410029BB04 /* InterfaceController */ = {
+			isa = PBXGroup;
+			children = (
+				73DF453F1F8A031000F275DD /* InterfaceController.swift */,
+				5AC2496A1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift */,
+				5AC2496C1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift */,
+			);
+			path = InterfaceController;
+			sourceTree = "<group>";
+		};
+		5AC2496F1F8B277C0029BB04 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				5AC249701F8B27BA0029BB04 /* FristTimeToShopObject.swift */,
+				5AC249721F8B27FE0029BB04 /* AgainTimeToShopObject.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 		736BE5861F8A28FD00C2229F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +246,8 @@
 		73DF453E1F8A031000F275DD /* AppleWatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				73DF453F1F8A031000F275DD /* InterfaceController.swift */,
+				5AC2496F1F8B277C0029BB04 /* NSObject */,
+				5AC2496E1F8B27410029BB04 /* InterfaceController */,
 				73DF45411F8A031000F275DD /* ExtensionDelegate.swift */,
 				73DF45431F8A031000F275DD /* NotificationController.swift */,
 				73DF45451F8A031000F275DD /* ComplicationController.swift */,
@@ -453,8 +481,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				73DF45441F8A031000F275DD /* NotificationController.swift in Sources */,
+				5AC249731F8B27FE0029BB04 /* AgainTimeToShopObject.swift in Sources */,
+				5AC2496B1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift in Sources */,
+				5AC2496D1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift in Sources */,
 				73DF45461F8A031000F275DD /* ComplicationController.swift in Sources */,
 				73DF45421F8A031000F275DD /* ExtensionDelegate.swift in Sources */,
+				5AC249711F8B27BA0029BB04 /* FristTimeToShopObject.swift in Sources */,
 				73DF45401F8A031000F275DD /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +659,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AppleWatchApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ackirin.AppleWatchApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -645,6 +678,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AppleWatchApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ackirin.AppleWatchApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
