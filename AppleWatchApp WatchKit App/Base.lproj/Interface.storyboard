@@ -20,6 +20,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="fristComeAction" destination="AgC-eL-Hgc" id="S3H-mK-ojX"/>
+                                        <segue destination="Rzi-P7-HiQ" kind="modal" id="cp7-fj-r52"/>
                                     </connections>
                                 </button>
                                 <group width="50" height="50" alignment="center" verticalAlignment="center" layout="overlap" id="40X-VK-7QC" userLabel="content">
@@ -98,7 +99,7 @@
                     <items>
                         <table alignment="left" id="zJP-29-lbQ">
                             <items>
-                                <tableRow identifier="frist_come" id="KAE-sI-1z9" customClass="FristTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
+                                <tableRow identifier="FristTimeToShopObjectID" id="KAE-sI-1z9" customClass="FristTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="geC-Nb-lUh">
                                         <items>
                                             <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="vjb-1r-gFu" userLabel="sep">
@@ -119,22 +120,31 @@
                                         </items>
                                         <color key="backgroundColor" red="0.19998151063919067" green="0.20001032948493958" blue="0.19997167587280273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </group>
+                                    <connections>
+                                        <outlet property="image" destination="Rc4-cR-OIB" id="1sM-qK-czU"/>
+                                        <outlet property="personNumLabel" destination="dIU-2e-GuC" id="dPZ-x9-ecn"/>
+                                        <outlet property="timeLabel" destination="UmR-Fv-Mno" id="gvZ-1T-CDy"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="list" destination="zJP-29-lbQ" id="Xbz-Mh-Tha"/>
+                        <segue destination="yYc-8n-PyD" kind="relationship" relationship="nextPage" id="jHU-Cb-aCI"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="442" y="91"/>
+            <point key="canvasLocation" x="436" y="48"/>
         </scene>
         <!--再次到店 9-->
         <scene sceneID="KaQ-KA-bVm">
             <objects>
                 <controller identifier="AgainComeIC" title="再次到店 9" id="yYc-8n-PyD" customClass="AgainTimeToShopInterfaceController" customModule="AppleWatchApp_WatchKit_Extension">
                     <items>
-                        <table alignment="left" id="BmR-bg-8Ii">
+                        <table alignment="center" id="BmR-bg-8Ii">
                             <items>
-                                <tableRow identifier="again_come" id="4FJ-xt-NQ2" customClass="AgainTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
+                                <tableRow identifier="AgainTimeToShopObjectID" id="4FJ-xt-NQ2" customClass="AgainTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="b57-vd-rLy">
                                         <items>
                                             <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="OQn-hP-Xw8" userLabel="sep">
@@ -163,7 +173,7 @@
                                                             <label alignment="left" verticalAlignment="center" text="第七代凯美瑞" id="nU7-vX-7ou" userLabel="carName">
                                                                 <fontDescription key="font" type="system" pointSize="13"/>
                                                             </label>
-                                                            <label alignment="right" verticalAlignment="center" text="李女士" id="y71-Be-DZK" userLabel="cusName">
+                                                            <label alignment="right" verticalAlignment="center" text="李女士" id="y71-Be-DZK" userLabel="userName">
                                                                 <fontDescription key="font" type="system" pointSize="13"/>
                                                             </label>
                                                         </items>
@@ -173,14 +183,23 @@
                                         </items>
                                         <color key="backgroundColor" red="0.19998151063919067" green="0.20001032948493958" blue="0.19997167587280273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </group>
+                                    <connections>
+                                        <outlet property="carModelLabel" destination="nU7-vX-7ou" id="KJ6-gd-hAh"/>
+                                        <outlet property="image" destination="Ubd-6w-QLH" id="Nqq-vf-zJV"/>
+                                        <outlet property="personNumberLabel" destination="Cpn-3L-dd7" id="sZr-3X-sao"/>
+                                        <outlet property="timeLabel" destination="CAu-lZ-ogy" id="kL1-eR-cET"/>
+                                        <outlet property="userNameLabel" destination="y71-Be-DZK" id="RvQ-DZ-KL5"/>
+                                    </connections>
                                 </tableRow>
                             </items>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="list" destination="BmR-bg-8Ii" id="jZH-3G-AZq"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="748" y="91"/>
+            <point key="canvasLocation" x="762" y="48"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

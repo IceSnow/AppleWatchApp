@@ -13,6 +13,9 @@ import Foundation
 /// Interface Controller - 再次到店
 class AgainTimeToShopInterfaceController: WKInterfaceController {
 
+    /// UI - 列表
+    @IBOutlet var list: WKInterfaceTable!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -26,6 +29,9 @@ class AgainTimeToShopInterfaceController: WKInterfaceController {
             }
         }
         
+        // 配置列表视图
+        settingListItmes()
+        
     }
 
     override func willActivate() {
@@ -36,6 +42,21 @@ class AgainTimeToShopInterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    // MARK: Private Method
+    
+    /// 配置列表单元
+    func settingListItmes() {
+        
+        list.setNumberOfRows(10, withRowType: "AgainTimeToShopObjectID")
+        
+        for index in 0..<list.numberOfRows {
+            
+            let row = list.rowController(at: index) as! AgainTimeToShopObject
+            
+            row.personNumberLabel.setText("\(index)人")
+        }
     }
 
 }
