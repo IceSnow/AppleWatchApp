@@ -29,22 +29,31 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    // MARK: Action
     // Action - 初次到店
     @IBAction func fristComeAction() {
         
+        // push
         pushController(withName: "ArrivalsShopInterfaceControllerID", context: ["menuTypeID": 0])
+        
+        // reloadRootPageControllers
 //        WKInterfaceController.reloadRootPageControllers(withNames: ["FristComeIC", "AgainComeIC"], contexts: nil, orientation: .horizontal, pageIndex: 0)
-//        pushController(withName: "FristComeIC", context: ["isCurrentPage": true])
+        
+        // presentController
 //        presentController(withNames: ["FristComeIC", "AgainComeIC"], contexts: [["isCurrentPage": true], ["isCurrentPage": false]])
     }
     
     // Action - 再次到店
     @IBAction func againComeAction() {
         pushController(withName: "ArrivalsShopInterfaceControllerID", context: ["menuTypeID": 1])
+        
+        // Push Controller
 //        pushController(withName: "FristComeIC", context: ["isCurrentPage": false])
+        
+        // PresentController
 //        presentController(withNames: ["FristComeIC", "AgainComeIC"], contexts: [["isCurrentPage": false], ["isCurrentPage": true]])
     }
-    
-    
-    
 }
+
+
+

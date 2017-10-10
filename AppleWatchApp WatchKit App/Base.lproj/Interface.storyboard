@@ -221,23 +221,82 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Alert Label" textAlignment="left" numberOfLines="0" id="IdU-wH-bcW"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="Category1" id="JfB-70-Muf" userLabel="Category1">
+                        <color key="sashColor" red="0.67006379365921021" green="0.59208959341049194" blue="0.46055346727371216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="0.97127681970596313" green="0.60044986009597778" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="wog-Tu-wSR" kind="relationship" relationship="dynamicNotificationInterface" id="Bsc-l3-4FT"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
         <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <scene sceneID="c78-nH-UYY">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AppleWatchApp_WatchKit_App" customModuleProvider="target"/>
+                <controller spacing="0.0" id="wog-Tu-wSR" customClass="NotificationController" customModule="AppleWatchApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="30" alignment="left" id="AQb-02-DmH">
+                            <items>
+                                <imageView width="45" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="b2o-I4-LEf"/>
+                                <label alignment="right" verticalAlignment="center" text="2人" id="z1X-uV-7Je"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Label" textAlignment="left" numberOfLines="0" id="Bfc-3R-nsX"/>
+                    </items>
+                    <color key="backgroundColor" red="0.97127681970596313" green="0.60044986009597778" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="Bfc-3R-nsX" id="oMJ-bU-elq"/>
+                        <outlet property="image" destination="b2o-I4-LEf" id="WO0-bY-nJ3"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="570" y="578"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="ZaT-Fj-1vA">
+            <objects>
+                <notificationController id="Y8L-Zs-biz">
+                    <items>
+                        <label alignment="left" text="Alert Label" textAlignment="left" numberOfLines="0" id="qEY-mm-GFt"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="Category2" id="MtD-ni-knv" userLabel="Category2">
+                        <color key="sashColor" red="0.49074345827102661" green="0.59599989652633667" blue="0.63445037603378296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="0.19949358701705933" green="0.60015177726745605" blue="0.81599611043930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="qEY-mm-GFt" id="4Uf-J0-VYg"/>
+                        <segue destination="UWw-PU-uR0" kind="relationship" relationship="dynamicNotificationInterface" id="xtE-Me-V8G"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="191" y="899"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="3G3-c4-0zQ">
+            <objects>
+                <controller id="UWw-PU-uR0" customClass="NotificationController" customModule="AppleWatchApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="30" alignment="left" spacing="0.0" id="syK-7G-iBM">
+                            <items>
+                                <imageView width="45" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="e8p-i9-ahK"/>
+                                <label alignment="right" verticalAlignment="center" text="3人" id="iZr-ft-BcP"/>
+                            </items>
+                        </group>
+                        <label alignment="left" textAlignment="left" numberOfLines="0" id="wVC-l3-cxM"/>
+                    </items>
+                    <color key="backgroundColor" red="0.20038366317749023" green="0.60015225410461426" blue="0.81599408388137817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="wVC-l3-cxM" id="U6X-Cq-SrX"/>
+                        <outlet property="image" destination="e8p-i9-ahK" id="pgN-ZA-81e"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="551" y="865"/>
         </scene>
     </scenes>
 </document>
