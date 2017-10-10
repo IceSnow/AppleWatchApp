@@ -1,5 +1,4 @@
 language: objective-C
 osx_image: xcode9
-xcode_project: AppleWatchApp.xcodeproj
-xcode_scheme: AppleWatchApp
-xcode_sdk: iphonesimulator11.0
+script:
+    - xcodebuild clean build -project AppleWatchApp.xcodeproj -scheme AppleWatchApp
