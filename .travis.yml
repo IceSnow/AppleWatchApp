@@ -1,3 +1,1 @@
 language: swift
-xcode_project: AppleWatchApp.xcodeproj
-xcode_scheme: AppleWatchApp WatchKit Extension
