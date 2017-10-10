@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A9EF5961F8C5FFB00E54B5D /* ArrivalsShopInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EF5951F8C5FFB00E54B5D /* ArrivalsShopInterfaceController.swift */; };
 		5AC2496B1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2496A1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift */; };
 		5AC2496D1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2496C1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift */; };
 		5AC249711F8B27BA0029BB04 /* FristTimeToShopObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC249701F8B27BA0029BB04 /* FristTimeToShopObject.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A9EF5951F8C5FFB00E54B5D /* ArrivalsShopInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalsShopInterfaceController.swift; sourceTree = "<group>"; };
 		5AC2496A1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTimeToShopInterfaceController.swift; sourceTree = "<group>"; };
 		5AC2496C1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgainTimeToShopInterfaceController.swift; sourceTree = "<group>"; };
 		5AC249701F8B27BA0029BB04 /* FristTimeToShopObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FristTimeToShopObject.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				73DF453F1F8A031000F275DD /* InterfaceController.swift */,
 				5AC2496A1F8B16350029BB04 /* FirstTimeToShopInterfaceController.swift */,
 				5AC2496C1F8B164C0029BB04 /* AgainTimeToShopInterfaceController.swift */,
+				5A9EF5951F8C5FFB00E54B5D /* ArrivalsShopInterfaceController.swift */,
 			);
 			path = InterfaceController;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				73DF45461F8A031000F275DD /* ComplicationController.swift in Sources */,
 				73DF45421F8A031000F275DD /* ExtensionDelegate.swift in Sources */,
 				5AC249711F8B27BA0029BB04 /* FristTimeToShopObject.swift in Sources */,
+				5A9EF5961F8C5FFB00E54B5D /* ArrivalsShopInterfaceController.swift in Sources */,
 				73DF45401F8A031000F275DD /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
