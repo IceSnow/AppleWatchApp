@@ -20,7 +20,6 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="fristComeAction" destination="AgC-eL-Hgc" id="S3H-mK-ojX"/>
-                                        <segue destination="Rzi-P7-HiQ" kind="modal" id="cp7-fj-r52"/>
                                     </connections>
                                 </button>
                                 <group width="50" height="50" alignment="center" verticalAlignment="center" layout="overlap" id="40X-VK-7QC" userLabel="content">
@@ -92,114 +91,130 @@
             </objects>
             <point key="canvasLocation" x="96" y="72"/>
         </scene>
-        <!--初次到店 18-->
-        <scene sceneID="xb7-hz-f5v">
+        <!--ArrivalsShopInterfaceControllerID-->
+        <scene sceneID="3Nf-aX-r7l">
             <objects>
-                <controller identifier="FristComeIC" title="初次到店 18" id="Rzi-P7-HiQ" customClass="FirstTimeToShopInterfaceController" customModule="AppleWatchApp_WatchKit_Extension">
+                <controller identifier="ArrivalsShopInterfaceControllerID" id="doQ-hq-kd0" customClass="ArrivalsShopInterfaceController" customModule="AppleWatchApp_WatchKit_Extension">
                     <items>
-                        <table alignment="left" id="zJP-29-lbQ">
+                        <group width="1" height="25" alignment="left" id="TSR-mY-CxO">
                             <items>
-                                <tableRow identifier="FristTimeToShopObjectID" id="KAE-sI-1z9" customClass="FristTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="geC-Nb-lUh">
+                                <group width="0.5" height="1" alignment="left" layout="overlap" id="22c-5a-ncg">
+                                    <items>
+                                        <button width="1" height="1" alignment="left" id="S8F-i1-MLy">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                            <connections>
+                                                <action selector="fristToShopAction" destination="doQ-hq-kd0" id="F3V-n4-e34"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="left" verticalAlignment="center" text="初次到店 18" id="vG3-96-C67">
+                                            <color key="textColor" red="0.21344375610351562" green="0.52905845642089844" blue="0.556812584400177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="0.5" height="1" alignment="left" layout="overlap" id="7J0-XI-2Am">
+                                    <items>
+                                        <button width="1" height="1" alignment="left" id="AdK-8Y-KNW">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="againToShopAction" destination="doQ-hq-kd0" id="Aqt-6x-SXY"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="left" verticalAlignment="center" text="再次到店 9" id="j8h-nv-cGR">
+                                            <color key="textColor" red="0.34506905078887939" green="0.3451143205165863" blue="0.34505361318588257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <table alignment="left" id="ROb-B1-4As">
+                            <items>
+                                <tableRow identifier="FristTimeToShopObjectID" id="XPQ-Tu-BRi" customClass="FristTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="x6c-yc-Vo3">
                                         <items>
-                                            <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="vjb-1r-gFu" userLabel="sep">
-                                                <color key="backgroundColor" red="0.19437804818153381" green="0.59618771076202393" blue="0.79984402656555176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="jTU-Sa-Il2" userLabel="sep">
+                                                <color key="backgroundColor" red="0.19437804819999999" green="0.59618771079999999" blue="0.79984402659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </group>
-                                            <group width="5" height="1" alignment="left" id="h7x-je-2yN"/>
-                                            <imageView width="40" height="21" alignment="left" verticalAlignment="center" id="Rc4-cR-OIB"/>
-                                            <group alignment="right" verticalAlignment="center" layout="vertical" id="8Y2-8o-RHJ">
+                                            <group width="5" height="1" alignment="left" id="S9J-F6-fLP"/>
+                                            <group alignment="right" verticalAlignment="center" layout="vertical" id="8zo-SG-sWP">
                                                 <items>
-                                                    <label alignment="right" text="16:31:49" id="UmR-Fv-Mno" userLabel="time">
+                                                    <label alignment="right" text="16:31:49" id="0Ut-XN-gx8" userLabel="time">
                                                         <fontDescription key="font" type="system" pointSize="13"/>
                                                     </label>
-                                                    <label alignment="right" text="1人" id="dIU-2e-GuC" userLabel="personNum">
+                                                    <label alignment="right" text="1人" id="O7A-aB-Hmr" userLabel="personNum">
                                                         <fontDescription key="font" type="system" pointSize="13"/>
                                                     </label>
                                                 </items>
                                             </group>
+                                            <imageView width="40" height="21" alignment="left" verticalAlignment="center" id="lQR-kC-29W"/>
                                         </items>
-                                        <color key="backgroundColor" red="0.19998151063919067" green="0.20001032948493958" blue="0.19997167587280273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </group>
                                     <connections>
-                                        <outlet property="image" destination="Rc4-cR-OIB" id="1sM-qK-czU"/>
-                                        <outlet property="personNumLabel" destination="dIU-2e-GuC" id="dPZ-x9-ecn"/>
-                                        <outlet property="timeLabel" destination="UmR-Fv-Mno" id="gvZ-1T-CDy"/>
+                                        <outlet property="image" destination="lQR-kC-29W" id="5xE-20-lHI"/>
+                                        <outlet property="personNumLabel" destination="O7A-aB-Hmr" id="0Yp-bg-8BJ"/>
+                                        <outlet property="timeLabel" destination="0Ut-XN-gx8" id="SvV-MM-VLN"/>
                                     </connections>
                                 </tableRow>
-                            </items>
-                        </table>
-                    </items>
-                    <connections>
-                        <outlet property="list" destination="zJP-29-lbQ" id="Xbz-Mh-Tha"/>
-                        <segue destination="yYc-8n-PyD" kind="relationship" relationship="nextPage" id="jHU-Cb-aCI"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="436" y="48"/>
-        </scene>
-        <!--再次到店 9-->
-        <scene sceneID="KaQ-KA-bVm">
-            <objects>
-                <controller identifier="AgainComeIC" title="再次到店 9" id="yYc-8n-PyD" customClass="AgainTimeToShopInterfaceController" customModule="AppleWatchApp_WatchKit_Extension">
-                    <items>
-                        <table alignment="center" id="BmR-bg-8Ii">
-                            <items>
-                                <tableRow identifier="AgainTimeToShopObjectID" id="4FJ-xt-NQ2" customClass="AgainTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="b57-vd-rLy">
+                                <tableRow identifier="AgainTimeToShopObjectID" id="8lE-lt-ZdB" customClass="AgainTimeToShopObject" customModule="AppleWatchApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="w6n-Th-beb">
                                         <items>
-                                            <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="OQn-hP-Xw8" userLabel="sep">
-                                                <color key="backgroundColor" red="0.97145634889602661" green="0.60050642490386963" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <group width="5" height="0.88" alignment="left" verticalAlignment="center" id="8Ur-Dn-AbW" userLabel="sep">
+                                                <color key="backgroundColor" red="0.97145634889999999" green="0.60050642489999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </group>
-                                            <group width="5" height="1" alignment="left" id="ccY-8X-xGm"/>
-                                            <group width="0.94999999999999996" alignment="left" layout="vertical" id="wsC-mx-RCW">
+                                            <group width="0.94999999999999996" alignment="left" layout="vertical" id="Tyv-Ek-4m7">
                                                 <items>
-                                                    <group width="1" alignment="left" id="Vbe-oe-kRh">
+                                                    <group width="1" alignment="left" id="tgw-Ek-5VN">
                                                         <items>
-                                                            <imageView width="40" height="21" alignment="left" verticalAlignment="center" id="Ubd-6w-QLH"/>
-                                                            <group alignment="right" verticalAlignment="center" layout="vertical" id="cnr-Ho-ehN">
+                                                            <group width="5" height="1" alignment="left" id="qna-zp-K0j"/>
+                                                            <imageView width="40" height="21" alignment="left" verticalAlignment="center" id="KH1-Rv-Ch6"/>
+                                                            <group alignment="right" verticalAlignment="center" layout="vertical" id="NM0-ah-BLF">
                                                                 <items>
-                                                                    <label alignment="right" text="16:31:49" id="CAu-lZ-ogy" userLabel="time">
+                                                                    <label alignment="right" text="16:31:49" id="t1q-MQ-u8S" userLabel="time">
                                                                         <fontDescription key="font" type="system" pointSize="13"/>
                                                                     </label>
-                                                                    <label alignment="right" text="1人" id="Cpn-3L-dd7" userLabel="personNum">
+                                                                    <label alignment="right" text="1人" id="ByQ-zC-wre" userLabel="personNum">
                                                                         <fontDescription key="font" type="system" pointSize="13"/>
                                                                     </label>
                                                                 </items>
                                                             </group>
                                                         </items>
                                                     </group>
-                                                    <group width="1" alignment="left" id="Ob9-TE-n01">
+                                                    <group width="1" alignment="left" id="a0p-ee-or3">
                                                         <items>
-                                                            <label alignment="left" verticalAlignment="center" text="第七代凯美瑞" id="nU7-vX-7ou" userLabel="carName">
+                                                            <label alignment="left" verticalAlignment="center" text="第七代凯美瑞" id="Oun-m3-fGa" userLabel="carName">
                                                                 <fontDescription key="font" type="system" pointSize="13"/>
                                                             </label>
-                                                            <label alignment="right" verticalAlignment="center" text="李女士" id="y71-Be-DZK" userLabel="userName">
+                                                            <label alignment="right" verticalAlignment="center" text="李女士" id="gZb-b1-cOP" userLabel="userName">
                                                                 <fontDescription key="font" type="system" pointSize="13"/>
                                                             </label>
                                                         </items>
                                                     </group>
                                                 </items>
                                             </group>
+                                            <group width="5" height="1" alignment="left" id="KDq-MS-GbL"/>
                                         </items>
-                                        <color key="backgroundColor" red="0.19998151063919067" green="0.20001032948493958" blue="0.19997167587280273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </group>
                                     <connections>
-                                        <outlet property="carModelLabel" destination="nU7-vX-7ou" id="KJ6-gd-hAh"/>
-                                        <outlet property="image" destination="Ubd-6w-QLH" id="Nqq-vf-zJV"/>
-                                        <outlet property="personNumberLabel" destination="Cpn-3L-dd7" id="sZr-3X-sao"/>
-                                        <outlet property="timeLabel" destination="CAu-lZ-ogy" id="kL1-eR-cET"/>
-                                        <outlet property="userNameLabel" destination="y71-Be-DZK" id="RvQ-DZ-KL5"/>
+                                        <outlet property="carModelLabel" destination="Oun-m3-fGa" id="PG0-Ig-rxV"/>
+                                        <outlet property="image" destination="KH1-Rv-Ch6" id="CmX-mI-LKb"/>
+                                        <outlet property="personNumberLabel" destination="ByQ-zC-wre" id="Rap-sw-tVW"/>
+                                        <outlet property="timeLabel" destination="t1q-MQ-u8S" id="Gau-JI-PET"/>
+                                        <outlet property="userNameLabel" destination="gZb-b1-cOP" id="aAQ-EB-8FR"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
-                        <outlet property="list" destination="BmR-bg-8Ii" id="jZH-3G-AZq"/>
+                        <outlet property="againToShopLabel" destination="j8h-nv-cGR" id="UkK-Uw-4Ze"/>
+                        <outlet property="fristToShopLabel" destination="vG3-96-C67" id="ODP-Oz-3tB"/>
+                        <outlet property="list" destination="ROb-B1-4As" id="wBO-G2-2Hl"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="762" y="48"/>
+            <point key="canvasLocation" x="362" y="311"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

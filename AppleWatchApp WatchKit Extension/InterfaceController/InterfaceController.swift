@@ -32,6 +32,7 @@ class InterfaceController: WKInterfaceController {
     // Action - 初次到店
     @IBAction func fristComeAction() {
         
+        pushController(withName: "ArrivalsShopInterfaceControllerID", context: ["menuTypeID": 0])
 //        WKInterfaceController.reloadRootPageControllers(withNames: ["FristComeIC", "AgainComeIC"], contexts: nil, orientation: .horizontal, pageIndex: 0)
 //        pushController(withName: "FristComeIC", context: ["isCurrentPage": true])
 //        presentController(withNames: ["FristComeIC", "AgainComeIC"], contexts: [["isCurrentPage": true], ["isCurrentPage": false]])
@@ -39,7 +40,7 @@ class InterfaceController: WKInterfaceController {
     
     // Action - 再次到店
     @IBAction func againComeAction() {
-        
+        pushController(withName: "ArrivalsShopInterfaceControllerID", context: ["menuTypeID": 1])
 //        pushController(withName: "FristComeIC", context: ["isCurrentPage": false])
 //        presentController(withNames: ["FristComeIC", "AgainComeIC"], contexts: [["isCurrentPage": false], ["isCurrentPage": true]])
     }
