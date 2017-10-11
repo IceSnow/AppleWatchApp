@@ -1,4 +1,4 @@
 language: objective-C
 osx_image: xcode9
 script:
-    - xcodebuild clean build -project AppleWatchApp.xcodeproj -scheme AppleWatchApp
+    - xcodebuild clean build -scheme AppleWatchApp -configuration Debug DEVELOPMENT_TEAM=GR2VYA358W -allowProvisioningUpdates
