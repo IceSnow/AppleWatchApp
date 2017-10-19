@@ -66,7 +66,7 @@ extension InterfaceController: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
         pushController(withName: "ArrivalsShopInterfaceControllerID", context: ["menuTypeID": 0])
-        print(response)
+        print("收到通知Action")
         completionHandler()
     }
     

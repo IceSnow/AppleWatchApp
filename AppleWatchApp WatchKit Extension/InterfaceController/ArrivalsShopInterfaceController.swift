@@ -29,6 +29,8 @@ class ArrivalsShopInterfaceController: WKInterfaceController {
     /// UI - 列表
     @IBOutlet var list: WKInterfaceTable!
     
+    var data1: [[String: String]] = []
+    
     /// 功能类型
     fileprivate var menuType: MenuType = .frist {
         didSet {
@@ -55,12 +57,33 @@ class ArrivalsShopInterfaceController: WKInterfaceController {
             }
         }
         
-        settingListItems()// 初始化配置列表
+        _ = NetworkManager.getObj("https://gist.githubusercontent.com/IceSnow/2932a6b18934e251c19c3197dd17b0b8/raw/1a3553b6d147f772bbeb22aaf85cb9aa552eee0a/AppleWatchAppDemo.json", finshed: { [weak self] (obj) in
+            
+            if let obj = obj as? [String: Any] {
+                
+                if let data = obj["data"] as? [[String: String]] {
+                    self?.data1 += data
+                    
+                    self?.settingListItems()// 更新列表
+                    return
+                }
+            }
+            
+            print("数据异常")
+            
+            print("请求成功:" + ((obj != nil) ? "\(obj!)": "nil"))
+        }) { (error) in
+            
+            print("请求失败")
+        }
+//        settingListItems()// 初始化配置列表
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        
         
         
         
@@ -100,27 +123,29 @@ class ArrivalsShopInterfaceController: WKInterfaceController {
         switch menuType {
         case .frist:// 初次到店
             
-            list.setNumberOfRows(5, withRowType: "FristTimeToShopObjectID")
+            list.setNumberOfRows(data1.count, withRowType: "FristTimeToShopObjectID")
         case .again:// 再次到店
             
-            list.setNumberOfRows(6, withRowType: "AgainTimeToShopObjectID")
+            list.setNumberOfRows(data1.count, withRowType: "AgainTimeToShopObjectID")
         }
         
         // setting rows
         for index in 0..<list.numberOfRows {
             
-            
+            let item = data1[index]
             switch menuType {
             case .frist:
                 
                 let row = list.rowController(at: index) as! FristTimeToShopObject
-                
-                row.personNumLabel.setText("\(index)人")
+                row.timeLabel.setText("\(item["time"] ?? "0")")
+                row.personNumLabel.setText("\(item["title1"] ?? "0")人")
             case .again:
                 
                 let row = list.rowController(at: index) as! AgainTimeToShopObject
-                
-                row.personNumberLabel.setText("\(index)人")
+                row.timeLabel.setText("\(item["time"] ?? "0")")
+                row.personNumberLabel.setText("\(item["title1"] ?? "0")人")
+                row.carModelLabel.setText("\(item["title21"] ?? "")")
+                row.userNameLabel.setText("\(item["title22"] ?? "")")
             }
         }
     }
