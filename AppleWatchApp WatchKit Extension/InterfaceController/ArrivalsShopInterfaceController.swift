@@ -40,6 +40,8 @@ class ArrivalsShopInterfaceController: WKInterfaceController {
         }
     }
     
+    fileprivate var menuTypeID: Int = 0
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -48,9 +50,8 @@ class ArrivalsShopInterfaceController: WKInterfaceController {
         if let context = context as? [String: Any] {
             
             // 配置功能类型
-            if let menuTypeID = context["menuTypeID"] as? Int, let menuType = MenuType(rawValue: menuTypeID) {
-                
-                self.menuType = menuType
+            if let menuTypeID = context["menuTypeID"] as? Int {
+                self.menuTypeID = menuTypeID
             }
         }
         
@@ -60,6 +61,14 @@ class ArrivalsShopInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        
+        
+        
+        if let menuType = MenuType(rawValue: menuTypeID) {
+            self.menuType = menuType
+        }
+        
     }
 
     override func didDeactivate() {

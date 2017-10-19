@@ -87,7 +87,6 @@ class NotificationController: WKUserNotificationInterfaceController {
             completionHandler(.default)
         }
     }
-    
 }
 
 class NotificationController2: WKUserNotificationInterfaceController {
@@ -127,23 +126,17 @@ class NotificationController2: WKUserNotificationInterfaceController {
         
         if let imageURL = userInfo["imageURL"] as? String {
             
-            if let url = URL(string: imageURL) {
+            weak var weakself = self
+            _ = NetworkManager.get(imageURL, finshed: { (data) in
                 
-                weak var weakself = self
-                let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-                    
-                    if let error = error {
-                        print(error)
-                    }
+                if let data = data {
                     weakself?.image.setImageData(data)
-                    completionHandler(.custom)
                 }
-                task.resume()
-            } else {
+                completionHandler(.custom)
+            }, failure: { (error) in
                 
-                print("无效图片链接")
-                completionHandler(.default)
-            }
+                completionHandler(.custom)
+            })
             
         } else {
             

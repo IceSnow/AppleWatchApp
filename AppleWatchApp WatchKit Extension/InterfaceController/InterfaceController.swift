@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import UserNotifications
 
 
 /// Interface Controller - Main
@@ -17,6 +18,11 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        
+//        self.dis
+        
     }
     
     override func willActivate() {
@@ -55,5 +61,17 @@ class InterfaceController: WKInterfaceController {
     }
 }
 
+extension InterfaceController: UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        pushController(withName: "ArrivalsShopInterfaceControllerID", context: ["menuTypeID": 0])
+        print(response)
+        completionHandler()
+    }
+    
+    
+    
+}
 
 
